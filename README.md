@@ -153,7 +153,7 @@ index="cowrie" src_ip="46.227.83.175"
 * Sequential usernames & passwords (`test50/pass50`) → **scripted testing**
 * No successful logins → Cowrie correctly captured failed attempts
 
-
+![Alert Config](./screenshots/screenshot5.jpeg)
 ---
 
 ## 8. GeoIP Enrichment
@@ -192,7 +192,7 @@ index="cowrie" sensor="synthetic"
 Trigger alert if **>5 failed attempts from the same IP in 10 minutes**.
 
 
-![Alert Config](./screenshots/screenshot7.jpeg)
+
 
 ---
 
