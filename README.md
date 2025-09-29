@@ -207,7 +207,3 @@ Trigger alert if **>5 failed attempts from the same IP in 10 minutes**.
 **Conclusion:**
 This lab demonstrates how a Cowrie honeypot captures SSH brute-force attempts, how Splunk ingests and visualizes data, and how patterns such as repeated login attempts, top usernames/passwords, and attacker IPs can be analyzed.
 Synthetic events are useful for testing dashboards, GeoIP enrichment, and alerting mechanisms.
-
-
-Do you want me to also make a **short version (2–3 paragraphs) for LinkedIn**, while this long one stays in GitHub?
-```
