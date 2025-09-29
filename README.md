@@ -31,8 +31,6 @@ Hands-on SOC project with Cowrie Honeypot and Splunk. I set up a Docker-based ho
 - Configure persistent log storage  
 - Verify logs are captured in Splunk  
 
-![Cowrie Container Running](./screenshots/docker-ps.png)  
-![Docker Volume Mounted](./screenshots/docker-volume.png)  
 
 ---
 
@@ -61,7 +59,7 @@ index="cowrie"
   * `cowrie.client.version` → SSH client version
   * `cowrie.client.kex` → key exchange events
 
-![Cowrie Logs](./screenshots/cowrie-logs.png)
+![Cowrie Logs](./screenshots/screenshot1.png))
 
 ---
 
@@ -98,7 +96,7 @@ index="cowrie" eventid="cowrie.login.failed"
 
 * Most common password: `7890`
 
-![Most Attempted Passwords](./screenshots/passwords.png)
+![Most Attempted Passwords](./screenshots/screenshot2.png))
 
 ---
 
@@ -116,7 +114,7 @@ index="cowrie" eventid="cowrie.login.failed"
 
 * Most targeted username: `test`
 
-![Most Targeted Usernames](./screenshots/usernames.png)
+![Most Targeted Usernames](./screenshots/screenshot3.png)
 
 ---
 
@@ -135,7 +133,7 @@ index="cowrie" eventid="cowrie.login.failed"
 * Highly concentrated within a single hour → indicates **synthetic/scripted attack pattern**
 * Multiple IPs attempted logins simultaneously, with 42 events from “other” less frequent sources
 
-![Attack Timeline](./screenshots/timeline.png)
+![Attack Timeline](./screenshots/screenshot4.png)
 
 ---
 
@@ -154,7 +152,7 @@ index="cowrie" src_ip="46.227.83.175"
 * Sequential usernames & passwords (`test50/pass50`) → **scripted testing**
 * No successful logins → Cowrie correctly captured failed attempts
 
-![Suspicious IP Investigation](./screenshots/suspicious-ip.png)
+![Suspicious IP Investigation](./screenshots/screenshot5.png)
 
 ---
 
@@ -178,7 +176,7 @@ index="cowrie" sensor="synthetic"
 * Synthetic attacks spread across multiple countries
 * **Top Countries:** United States, China, Brazil, Taiwan, South Korea
 
-![GeoIP Map](./screenshots/geoip.png)
+![GeoIP Map](./screenshots/screenshot6.png)
 
 ---
 
@@ -193,8 +191,8 @@ index="cowrie" sensor="synthetic"
 **Alerts Setup Example:**
 Trigger alert if **>5 failed attempts from the same IP in 10 minutes**.
 
-![Dashboard](./screenshots/dashboard.png)
-![Alert Config](./screenshots/alert.png)
+
+![Alert Config](./screenshots/screenshot7.png)
 
 ---
 
