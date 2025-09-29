@@ -59,7 +59,7 @@ index="cowrie"
   * `cowrie.client.version` → SSH client version
   * `cowrie.client.kex` → key exchange events
 
-![Cowrie Logs](./screenshots/screenshot1.jpeg))
+![Cowrie Logs](./screenshots/screenshot7.jpeg))
 
 ---
 
@@ -79,7 +79,7 @@ index="cowrie" eventid="cowrie.login.failed"
 
 * Top attacking IPs: `46.227.83.175` (most frequent), followed by `150.173.160.36`, `141.221.36.187`, `107.116.50.160`
 * Repeated usernames/passwords: `test/7890` appeared twice; all others appeared only once
-
+![Most Attempted Passwords](./screenshots/screenshot2.jpeg))
 ---
 
 ## 4. Most Attempted Passwords
@@ -96,7 +96,7 @@ index="cowrie" eventid="cowrie.login.failed"
 
 * Most common password: `7890`
 
-![Most Attempted Passwords](./screenshots/screenshot2.jpeg))
+![Most Targeted Usernames](./screenshots/screenshot3.jpeg)
 
 ---
 
@@ -114,7 +114,8 @@ index="cowrie" eventid="cowrie.login.failed"
 
 * Most targeted username: `test`
 
-![Most Targeted Usernames](./screenshots/screenshot3.jpeg)
+![Attack Timeline](./screenshots/screenshot4.jpeg)
+
 
 ---
 
@@ -133,8 +134,8 @@ index="cowrie" eventid="cowrie.login.failed"
 * Highly concentrated within a single hour → indicates **synthetic/scripted attack pattern**
 * Multiple IPs attempted logins simultaneously, with 42 events from “other” less frequent sources
 
-![Attack Timeline](./screenshots/screenshot4.jpeg)
 
+![Suspicious IP Investigation](./screenshots/screenshot1.jpeg)
 ---
 
 ## 7. Suspicious IP Investigation
@@ -152,7 +153,6 @@ index="cowrie" src_ip="46.227.83.175"
 * Sequential usernames & passwords (`test50/pass50`) → **scripted testing**
 * No successful logins → Cowrie correctly captured failed attempts
 
-![Suspicious IP Investigation](./screenshots/screenshot5.jpeg)
 
 ---
 
